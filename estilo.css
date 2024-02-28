@@ -1,0 +1,243 @@
+
+        html{
+            scroll-behavior: smooth;
+            }
+
+        * {
+            margin: auto;
+            padding: auto;
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+
+            width: 100%;
+
+            background-image: url('./img/fundo.png');
+            /* Substitua pelo caminho real da sua imagem */
+            background-size: cover;
+            /* Ajusta o tamanho da imagem para cobrir completamente o elemento */
+            background-position: center;
+            /* Posiciona a imagem no centro do elemento */
+            background-repeat: no-repeat;
+            /* Evita repetição da imagem */
+        }
+
+        .rifa {
+            width: 560px;
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 10px;
+            justify-content: center;
+            padding-bottom: 50px;
+            z-index: 300;
+        }
+
+        .break {
+            flex-basis: 100%;
+            height: 0;
+        }
+
+        .numero {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 1px;
+            color: #a19b94;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .numero a {
+            color: #a19b94;
+        }
+
+        .numero:hover {
+            background-color: #cecdcb;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .escolhido {
+            background-color: #a19b94;
+            color: #fff;
+            cursor: not-allowed;
+            background-color: lightgray;
+            border: 1px solid darkgray;
+            pointer-events: none;
+            /* Torna a div inativa, não responde a eventos do mouse */
+            opacity: 0.4;
+            /* Pode ajustar a opacidade para indicar visualmente que está inativa */
+            cursor: not-allowed;
+            /* Muda o cursor para indicar que está inativa */
+        }
+
+
+        .urso {
+            width: 100%;
+            display: block;
+            /* Aqui declaramos nossa animação inline */
+            animation: bounce 4s infinite alternate;
+
+            transition: 0.9s;
+        }
+
+        .urso:hover{
+            width: 80%;
+            left:20px;
+        }
+        
+
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(-30px);
+            }
+        }
+
+        @-webkit-keyframes bounce {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(-80px);
+            }
+        }
+
+
+
+        .nuvem {
+            /* Aqui declaramos nossa animação inline */
+
+            animation: nuvem 10s infinite alternate;
+            margin-bottom: -390px;
+            z-index: 100;
+
+        }
+
+
+        @keyframes nuvem {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(20px);
+            }
+
+            100% {
+                transform: translateX(60px);
+            }
+        }
+
+
+        .nuvem2 {
+            /* Aqui declaramos nossa animação inline */
+            animation: nuvem2 40s infinite alternate;
+            margin-bottom: -200px;
+            z-index: 0;
+        }
+
+
+        @keyframes nuvem2 {
+            0% {
+                transform: translateX(160px);
+            }
+
+            50% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(50px);
+            }
+        }
+
+        .nuvem3 {
+            /* Aqui declaramos nossa animação inline */
+            animation: nuvem2 20s infinite alternate;
+            margin-top: -260px;
+            z-index: 100;
+            margin-left: 500px;
+            display: none;
+        }
+
+
+        @keyframes nuvem2 {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(30px);
+            }
+
+            100% {
+                transform: translateY(20px);
+            }
+        }
+
+
+        .botao {
+            background-color: #9AB3C0;
+            border: none;
+            width: 300px;
+            padding: 20px;
+            display: block;
+            border-radius: 20px;
+            margin-top: -130px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16pt;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 250;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            /* Deslocamento horizontal, deslocamento vertical, desfoque e cor da sombra */
+
+            transition: margin-top 0.8s ease-in-out;
+
+        }
+
+        .botao:hover {
+            margin-top: -140px;
+            box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .botao:hover .urso{
+           
+                width: 80%;
+                left:20px;
+            
+        }
+
+
+        a {
+            text-decoration: none;
+            z-index: 300;
+        }
+
+        .levi {
+            margin-bottom: -230px;
+        }
+
+        .infos{
+            z-index: 200;
+        }
