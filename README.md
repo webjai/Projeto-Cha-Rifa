@@ -1,6 +1,6 @@
 <h1>Chá Rifa</h1> 
 
-<a href="https://webjai.github.io/Projeto-Cha-Rifa"><img src="[https://github.com/webjai/Explorar-Minha-Cidade/blob/main/assets/explore%20sua%20cidade.png](https://github.com/webjai/Projeto-Cha-Rifa/blob/main/cha%20Rifa.png)" /></a>
+<a href="https://webjai.github.io/Projeto-Cha-Rifa"><img src="https://github.com/webjai/Projeto-Cha-Rifa/blob/main/cha%20Rifa.png" /></a>
 
 ## O Projeto
 
